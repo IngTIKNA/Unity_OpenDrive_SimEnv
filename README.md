@@ -77,6 +77,7 @@ ________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/29532729/113454566-d8083d80-9408-11eb-8261-22369df76716.png)
 
 Since the initial heading angle and arc radius are known, the center of the arc can be computed depending on the curvature sign:
+
   •	xArc =  xStarting + cos (hdg + ( (pi/2) * Sign * (-1)) − π) ∗ radius
   
   •	yArc =  yStarting + sin (hdg  + ( (pi/2)  * Sign * (-1)) − π) ∗ radius
