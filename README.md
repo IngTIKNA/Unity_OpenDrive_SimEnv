@@ -82,16 +82,11 @@ Moreover, each geometry record is an attribute which characterizes the type of t
 ______________________________________________________________________________________________________________________________________________________
 
 
-
-
-
-
-
-
-
-
-
-
 <img src="https://raw.githubusercontent.com/IngTIKNA/Unity_OpenDrive_SimEnv/main/pics/MultiLane/1_2.png">
+
+
+# EVALUATION 
+
+To see how accurately the road generator script can create road networks, the road network, which was generated in Unity game engine, was compared with the road network simulated in SUMO simulator.  The below figure indicates the comparison of the road networks simulated in different platforms.
 
 <img src="https://raw.githubusercontent.com/IngTIKNA/Unity_OpenDrive_SimEnv/main/pics/MultiLane/verification.png">
