@@ -32,16 +32,21 @@ The road layout in OpenDRIVE, as previously mentioned, consists of analytical fo
 In OpenDRIVE standard, each road segment’s layout is described by some geometric records based on the its type, like line, arc, and spiral. Each of those records contains:
 
 • An s offset,
+
 • A world coordinate which defines starting point,
+
 • A heading angle which describes the initial orientation of the road segment (In
  OpenDRIVE standard, heading angle is defined in terms of radians.)
+
 • The length of the road segment.
 
 
 Moreover, each geometry record is an attribute which characterizes the type of the current geometry. There are several kind of geometries, such as:
 
 • Lines – have no additional parameters 
+
 • Arcs – have a constant curvature parameter 
+
 • Spiral – have two curvature parameters for the start and end of the segment 
 
 
