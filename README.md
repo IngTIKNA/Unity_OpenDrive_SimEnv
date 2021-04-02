@@ -72,17 +72,17 @@ ________________________________________________________________________________
 
 - Arc Geometry :  Arc geometry is bit more complicated that the line geometry. By using curvature parameter, the radius of the arc can be computed as:
  
-  •	radius = | \frac{1}{curvature\ } |
+  •	radius = | 1 / curvature |
 
 ![image](https://user-images.githubusercontent.com/29532729/113454566-d8083d80-9408-11eb-8261-22369df76716.png)
 
 Since the initial heading angle and arc radius are known, the center of the arc can be computed depending on the curvature sign:
-  •	xArc =  xStarting + cos (hdg + ( \frac{\pi}{2} * Sign * (-1)) − π) ∗ radius
-  •	yArc =  yStarting + sin (hdg  + ( \frac{\pi}{2}  * Sign * (-1)) − π) ∗ radius
+  •	xArc =  xStarting + cos (hdg + ( (pi/2) * Sign * (-1)) − π) ∗ radius
+  •	yArc =  yStarting + sin (hdg  + ( (pi/2)  * Sign * (-1)) − π) ∗ radius
 
 To compute the central angle of the arc in terms of radians, the following equation is used.
 
-	θcentral =  \frac{lengtharc}{radius\ } 
+	θcentral =  lengtharc / radius 
 
 ______________________________________________________________________________________________________________________________________________________
 
