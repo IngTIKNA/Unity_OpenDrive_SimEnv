@@ -78,6 +78,7 @@ ________________________________________________________________________________
 
 Since the initial heading angle and arc radius are known, the center of the arc can be computed depending on the curvature sign:
   •	xArc =  xStarting + cos (hdg + ( (pi/2) * Sign * (-1)) − π) ∗ radius
+  
   •	yArc =  yStarting + sin (hdg  + ( (pi/2)  * Sign * (-1)) − π) ∗ radius
 
 To compute the central angle of the arc in terms of radians, the following equation is used.
