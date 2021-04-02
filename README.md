@@ -21,6 +21,45 @@ The idea behind creating a file format which contains all properties of road str
 
 ![image](https://user-images.githubusercontent.com/29532729/113411818-0a894a80-93b7-11eb-8ef8-8cd8f72dfde8.png)
 
+______________________________________________________________________________________________________________________________________________________
+# Road Geometry
+
+To represent geographic data, it is required to handle several tasks, such as mapping, visualization, etc. Therefore, the suitable type of data and object representation must be provided by the geodata models.
+The road layout in OpenDRIVE, as previously mentioned, consists of analytical formulation of the road segments’ geometry based on the chord line and in the track coordinate system. To visualize road layout in the simulators, its geometry has to be created relative the center of 3D world.
+
+![image](https://user-images.githubusercontent.com/29532729/113411887-399fbc00-93b7-11eb-9503-1111135585d8.png)
+
+In OpenDRIVE standard, each road segment’s layout is described by some geometric records based on the its type, like line, arc, and spiral. Each of those records contains:
+
+• An s offset,
+• A world coordinate which defines starting point,
+• A heading angle which describes the initial orientation of the road segment (In
+ OpenDRIVE standard, heading angle is defined in terms of radians.)
+• The length of the road segment.
+
+
+Moreover, each geometry record is an attribute which characterizes the type of the current geometry. There are several kind of geometries, such as:
+
+• Lines – have no additional parameters 
+• Arcs – have a constant curvature parameter 
+• Spiral – have two curvature parameters for the start and end of the segment 
+
+
+
+______________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <img src="https://raw.githubusercontent.com/IngTIKNA/Unity_OpenDrive_SimEnv/main/pics/MultiLane/1_1.png">
 
