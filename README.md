@@ -54,7 +54,7 @@ Moreover, each geometry record is an attribute which characterizes the type of t
 • Spiral – have two curvature parameters for the start and end of the segment 
 
 
-
+______________________________________________________________________________________________________________________________________________________
 
 ![image](https://user-images.githubusercontent.com/29532729/113412006-7ec3ee00-93b7-11eb-812a-4e916c4a3e53.png)
 
@@ -67,16 +67,27 @@ Moreover, each geometry record is an attribute which characterizes the type of t
   •	yEnding  =  yStarting  + sin(hdg)  ∗ (sEnding − sGeom )
 
 
+______________________________________________________________________________________________________________________________________________________
 
 
+- Arc Geometry :  Arc geometry is bit more complicated that the line geometry. By using curvature parameter, the radius of the arc can be computed as:
+ 
+  •	radius = | \frac{1}{curvature\ } |
+
+![image](https://user-images.githubusercontent.com/29532729/113454566-d8083d80-9408-11eb-8261-22369df76716.png)
+
+Since the initial heading angle and arc radius are known, the center of the arc can be computed depending on the curvature sign:
+  •	xArc =  xStarting + cos (hdg + ( \frac{\pi}{2} * Sign * (-1)) − π) ∗ radius
+  •	yArc =  yStarting + sin (hdg  + ( \frac{\pi}{2}  * Sign * (-1)) − π) ∗ radius
+
+To compute the central angle of the arc in terms of radians, the following equation is used.
+
+	θcentral =  \frac{lengtharc}{radius\ } 
+
+______________________________________________________________________________________________________________________________________________________
 
 
-
-
-
-
-
-
+______________________________________________________________________________________________________________________________________________________
 
 
 ______________________________________________________________________________________________________________________________________________________
