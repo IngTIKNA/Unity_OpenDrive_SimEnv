@@ -51,10 +51,10 @@ Moreover, each geometry record is an attribute which characterizes the type of t
 
 
 
-Line Geometry  In case of a line geometry as shown in the above figure, its ending points can be found using the following equations:
+- Line Geometry :  In case of a line geometry as shown in the above figure, its ending points can be found using the following equations:
 
-	xEnding  =  xStarting + cos(hdg) ∗ (sEnding − sGeom )
-	yEnding  =  yStarting  + sin(hdg)  ∗ (sEnding − sGeom )
+• xEnding  =  xStarting + cos(hdg) ∗ (sEnding − sGeom )
+•	yEnding  =  yStarting  + sin(hdg)  ∗ (sEnding − sGeom )
 
 
 
