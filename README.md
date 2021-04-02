@@ -87,10 +87,55 @@ To compute the central angle of the arc in terms of radians, the following equat
 	θcentral =  lengtharc / radius 
 
 ______________________________________________________________________________________________________________________________________________________
+# DESIGN and DEVELOPMENT OF ROAD GENERATOR SCRIPT
+
+![image](https://user-images.githubusercontent.com/29532729/113454915-aa6fc400-9409-11eb-954c-71fb0a94e497.png)
 
 
-______________________________________________________________________________________________________________________________________________________
+As can be seen in the above fiure, the RoadGenerator script has several subcomponents that handle different tasks, like parsing and reading XML file, getting node attributes, etc. 
 
+The RoadGenerator script is responsible for creating the segments of the road geometry, which is described in OpenDRIVE file, in Unity platform. 7.Figure indicates an overview of RoadGenerator script's flowchart.
+
+![image](https://user-images.githubusercontent.com/29532729/113454962-c4110b80-9409-11eb-9244-d7d55a0e0b37.png)
+
+To be able to use the assets of EasyRoads3D toolset, it is required to create instances of ERRoadNetwork and ERRoadType classes. Moreover, the roadWidth and roadMaterial. 
+
+![image](https://user-images.githubusercontent.com/29532729/113454989-d428eb00-9409-11eb-9a4d-1314b57ac15a.png)
+
+Based on the order of geometry nodes in OpenDRIVE file, the Lineroads and Arcroads containers individually hold the road segment assets as a list. Likewise, the linePaths and arcPaths hold road geometry parameters such as, starting points, ending points, heading angle, etc. 
+
+![image](https://user-images.githubusercontent.com/29532729/113455014-dd19bc80-9409-11eb-8753-9c7c22a72b12.png)
+
+
+parseFile function deals with reading the file in given directory and selecting the nodes based on the desired tag name which is geometry. It returns those nodes in a list.
+
+![image](https://user-images.githubusercontent.com/29532729/113455029-e30f9d80-9409-11eb-8e16-250b3921f6d2.png)
+
+
+In the OpenDRIVE file, the geometric parameters of road layout are represented as attributes of child nodes under geometry node. To be able to perform arithmetic calculations by using attributes, it is required to convert them from string to float format. As depicted in the below figure, the attribute format is converted from string to float. 
+
+![image](https://user-images.githubusercontent.com/29532729/113455113-1eaa6780-940a-11eb-9e8b-e3dbd67d3b4e.png)
+
+
+All types of road geometries have common parameters such as starting points in X and Y axes, road segment id, to describe road geometry. Therefore, an abstract class which is named paths was created to hold these information as its variables. Other classes which are responsible for holding information about relevant road type like, LinePath and ArcPath, are derived from the paths abstract class.
+
+![image](https://user-images.githubusercontent.com/29532729/113455129-2a962980-940a-11eb-9dac-b7d569ab5f78.png)
+
+
+The constructor of LinePath class performs to compute ending point of a road segment based on the given starting point, road length, and heading angle.  Both starting and ending points of road segment are stored in a 3D Vector to be used for creating game objects in Unity via EasyRoads3D toolset.
+
+![image](https://user-images.githubusercontent.com/29532729/113455157-397cdc00-940a-11eb-95a4-81b658031022.png)
+
+
+In addition to the arguments taken by the LinePath class' constructor, the constructor of ArcPath class also takes the curvature parameter as an argument. By doing so, it acquires all parameters required for computing the starting point, final point, central point, and the points between starting and endpoint.
+
+
+![image](https://user-images.githubusercontent.com/29532729/113455170-400b5380-940a-11eb-9c65-23e9f29c70eb.png)
+
+
+To visualize road segments in Unity platform based on the calculated points, the assets of the EasyRoads3D toolset are used as game objects.
+
+![image](https://user-images.githubusercontent.com/29532729/113455180-48638e80-940a-11eb-83dd-2057bd60ccc4.png)
 
 ______________________________________________________________________________________________________________________________________________________
 
