@@ -4,10 +4,10 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________________________________
 
 
-Game engines can be used for validation of environment simulation, vehicle dynamics, and complex AD algorithms in different scenarios. The goal of this project was to develop a road generator script for creating a simulation environment in Unity3D based on the predefined OpenDRIVE file to simulate vehicle behavior and point-cloud data.
+Game engines can be used for validation of environment simulation, vehicle dynamics, and complex AD algorithms in different scenarios. The goal of this project was to develop a road generator application for creating a simulation environment in Unity3D based on the predefined OpenDRIVE file to simulate vehicle behavior and point-cloud data.
 
 
-This research work focuses on the development of a road generator script for creating a road structure and corresponding visualization data in driving simulator based on the OpenDRIVE file, which is a standardized file format. The OpenDRIVE files contain a dataset which describes the road structure and covers all the properties regarding a road geometry.
+This research work focuses on the development of a road generator application for creating a road structure and corresponding visualization data in driving simulator based on the OpenDRIVE file, which is a standardized file format. The OpenDRIVE files contain a dataset which describes the road structure and covers all the properties regarding a road geometry.
 
 
 ![image](https://user-images.githubusercontent.com/29532729/113411704-cc8c2680-93b6-11eb-8141-b8b7f7225606.png)
@@ -87,14 +87,14 @@ To compute the central angle of the arc in terms of radians, the following equat
 	θcentral =  length_arc / radius 
 
 ______________________________________________________________________________________________________________________________________________________
-# DESIGN and DEVELOPMENT OF ROAD GENERATOR SCRIPT
+# DESIGN and DEVELOPMENT OF ROAD GENERATOR APPLICATION
 
 ![image](https://user-images.githubusercontent.com/29532729/113470544-ad44d600-9456-11eb-9bdf-43488373403e.png)
 
 
-As can be seen in the above fiure, the RoadGenerator script has several subcomponents that handle different tasks, like parsing and reading XML file, getting node attributes, etc. 
+As can be seen in the above fiure, the RoadGenerator application has several subcomponents that handle different tasks, like parsing and reading XML file, getting node attributes, etc. 
 
-The RoadGenerator script is responsible for creating the segments of the road geometry, which is described in OpenDRIVE file, in Unity platform. Below figure indicates an overview of RoadGenerator script's flowchart.
+The RoadGenerator application is responsible for creating the segments of the road geometry, which is described in OpenDRIVE file, in Unity platform. Below figure indicates an overview of RoadGenerator application's flowchart.
 
 ![image](https://user-images.githubusercontent.com/29532729/113454962-c4110b80-9409-11eb-9244-d7d55a0e0b37.png)
 
@@ -145,6 +145,6 @@ ________________________________________________________________________________
 
 # EVALUATION 
 
-To see how accurately the road generator script can create road networks, the road network, which was generated in Unity game engine, was compared with the road network simulated in SUMO simulator.  The below figure indicates the comparison of the road networks simulated in different platforms.
+To see how accurately the road generator application can create road networks, the road network, which was generated in Unity game engine, was compared with the road network simulated in SUMO simulator.  The below figure indicates the comparison of the road networks simulated in different platforms.
 
 <img src="https://raw.githubusercontent.com/IngTIKNA/Unity_OpenDrive_SimEnv/main/pics/MultiLane/verification.png">
