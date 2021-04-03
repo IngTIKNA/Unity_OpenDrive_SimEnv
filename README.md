@@ -84,7 +84,7 @@ Since the initial heading angle and arc radius are known, the center of the arc 
 
 To compute the central angle of the arc in terms of radians, the following equation is used.
 
-	θcentral =  lengtharc / radius 
+	θcentral =  length_arc / radius 
 
 ______________________________________________________________________________________________________________________________________________________
 # DESIGN and DEVELOPMENT OF ROAD GENERATOR SCRIPT
