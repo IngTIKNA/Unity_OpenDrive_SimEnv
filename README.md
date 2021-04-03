@@ -94,7 +94,7 @@ ________________________________________________________________________________
 
 As can be seen in the above fiure, the RoadGenerator script has several subcomponents that handle different tasks, like parsing and reading XML file, getting node attributes, etc. 
 
-The RoadGenerator script is responsible for creating the segments of the road geometry, which is described in OpenDRIVE file, in Unity platform. 7.Figure indicates an overview of RoadGenerator script's flowchart.
+The RoadGenerator script is responsible for creating the segments of the road geometry, which is described in OpenDRIVE file, in Unity platform. Below figure indicates an overview of RoadGenerator script's flowchart.
 
 ![image](https://user-images.githubusercontent.com/29532729/113454962-c4110b80-9409-11eb-9244-d7d55a0e0b37.png)
 
