@@ -89,7 +89,7 @@ To compute the central angle of the arc in terms of radians, the following equat
 ______________________________________________________________________________________________________________________________________________________
 # DESIGN and DEVELOPMENT OF ROAD GENERATOR SCRIPT
 
-![image](https://user-images.githubusercontent.com/29532729/113454915-aa6fc400-9409-11eb-954c-71fb0a94e497.png)
+![image](https://user-images.githubusercontent.com/29532729/113470544-ad44d600-9456-11eb-9bdf-43488373403e.png)
 
 
 As can be seen in the above fiure, the RoadGenerator script has several subcomponents that handle different tasks, like parsing and reading XML file, getting node attributes, etc. 
