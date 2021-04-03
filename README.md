@@ -1,4 +1,4 @@
-# Road Generator Script | Development of simulation environment in Unity based on OpenDRIVE file to simulate vehicle behavior and point cloud data
+# Road Generator | Development of simulation environment in Unity based on OpenDRIVE file to simulate vehicle behavior and point cloud data
 ______________________________________________________________________________________________________________________________________________________
 <img src="https://raw.githubusercontent.com/IngTIKNA/Unity_OpenDrive_SimEnv/main/pics/MultiLane/1_1.png">
 ______________________________________________________________________________________________________________________________________________________
