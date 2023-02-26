@@ -1,7 +1,7 @@
 # Road Generator | Development of simulation environment in Unity based on OpenDRIVE file to simulate vehicle behavior and point cloud data
-______________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________
 <img src="https://raw.githubusercontent.com/IngTIKNA/Unity_OpenDrive_SimEnv/main/pics/MultiLane/1_1.png">
-______________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________
 
 Game engines can be used for the validation of environment simulation, vehicle dynamics, and complex AD algorithms in different scenarios. The goal of this project was to create a simulation environment in Unity3D using the predefined OpenDRIVE file to simulate vehicle behavior and point-cloud data gathered by perception sensors. This research work focuses on the development of a road generator application for creating a road structure and corresponding visualization data in a driving simulator. The application is based on the OpenDRIVE file, which is a standardized file format. The OpenDRIVE files contain a dataset that describes the road structure and covers all the properties regarding road geometry.  
 
