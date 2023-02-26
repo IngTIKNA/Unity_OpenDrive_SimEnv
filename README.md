@@ -18,9 +18,9 @@ To display the road and its environment in Unity, EasyRoads3D toolset which cont
 ______________________________________________________________________________________________________________________________________________________
 # OPEN DRIVE – ROAD DESCRIPTION STANDARD 
 
-Because of many companies in automotive industry which need similar dataset for their simulators, such as the description of road network and road objects, several standardized file formats were developed. OpenDRIVE which is one of the standardized file formats’ major examples was developed by VIRES. 
+Several standardized file formats have been developed in the automotive industry for companies that require similar datasets for their simulators, including road networks and road objects. One of the most prominent standardized file formats developed by VIRES is OpenDRIVE. 
 
-The idea behind creating a file format which contains all properties of road structure was to simplify the exchange of data among different companies and simulators. OpenDRIVE's first public version was released in 2006. Then, this standard has been recognized by a high number of companies. OpenDRIVE is aimed at storing the data in a XML format. The nodes of the XML file indicate various properties of the road, such as junction points, elevation, and lane parameters. Hierarchical architecture of OpenDRIVE structure is shown in the below figure.
+This file format was created in order to simplify the exchange of data between simulation programs and companies. The OpenDRIVE standard was recognized by many companies after the first public version was released in 2006. OpenDRIVE stores data in an XML format. In the XML file, nodes indicate various properties of the road, including intersections, elevations, and lane parameters. The figure below shows the hierarchical architecture of OpenDRIVE.
 
 
 ![image](https://user-images.githubusercontent.com/29532729/113411818-0a894a80-93b7-11eb-8ef8-8cd8f72dfde8.png)
@@ -28,12 +28,13 @@ The idea behind creating a file format which contains all properties of road str
 ______________________________________________________________________________________________________________________________________________________
 # Road Geometry
 
-To represent geographic data, it is required to handle several tasks, such as mapping, visualization, etc. Therefore, the suitable type of data and object representation must be provided by the geodata models.
-The road layout in OpenDRIVE, as previously mentioned, consists of analytical formulation of the road segments’ geometry based on the chord line and in the track coordinate system. To visualize road layout in the simulators, its geometry has to be created relative the center of 3D world.
+Geospatial data needs to be represented in various ways, including mapping and visualization. Therefore, a suitable type of data and object representation must be provided by the geodata models. In OpenDRIVE, the geometry of road segments is derived analytically from the chord line and the track coordinate system. In simulators, road layouts must be visualized relative to the center of the 3D world.
 
 ![image](https://user-images.githubusercontent.com/29532729/113411887-399fbc00-93b7-11eb-9503-1111135585d8.png)
 
-In OpenDRIVE standard, each road segment’s layout is described by some geometric records based on the its type, like line, arc, and spiral. Each of those records contains:
+OpenDRIVE describes the layout of each road segment using geometric records based on its types, such as lines, arcs, and spirals. 
+
+The following information is contained in each record:
 
 • An s offset,
 
@@ -45,7 +46,9 @@ In OpenDRIVE standard, each road segment’s layout is described by some geometr
 • The length of the road segment.
 
 
-Moreover, each geometry record is an attribute which characterizes the type of the current geometry. There are several kind of geometries, such as:
+Further, each geometry record contains an attribute that describes the type of geometry. 
+
+Geometries can be divided into several types:
 
 • Lines – have no additional parameters 
 
@@ -145,6 +148,6 @@ ________________________________________________________________________________
 
 # EVALUATION 
 
-To see how accurately the road generator application can create road networks, the road network, which was generated in Unity game engine, was compared with the road network simulated in SUMO simulator.  The below figure indicates the comparison of the road networks simulated in different platforms.
+We compared the road network generated in Unity with the SUMO simulator to determine how accurate the road generator can create road networks. The below figure indicates the comparison of the road networks simulated in different platforms.
 
 <img src="https://raw.githubusercontent.com/IngTIKNA/Unity_OpenDrive_SimEnv/main/pics/MultiLane/verification.png">
